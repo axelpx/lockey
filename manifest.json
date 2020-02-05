@@ -1,0 +1,26 @@
+{
+	"name": "locky",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Locked cases icon for FootPrints by axelpx",
+	"content_scripts": [
+		{
+			"matches": ["https://footprints.intermedia.net/MRcgi/MRhomepage.pl*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	],
+   	"permissions": [
+        "contextMenus", 
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+		],
+   	"web_accessible_resources": [
+		"images/lock.png"
+		],
+    "icons":{
+    	"16":"images/icon.png",
+    	"128":"images/icon.png"
+    	}
+}
